@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    background: #f8f9fa;
+    line-height: 1.6;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+}
+
+.hero {
+    background: linear-gradient(90deg, #0077ff 0%, #00d2ff 100%);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #0077ff;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn:hover {
+    background: #0077ff;
+    color: #fff;
+}
+
+.features, .about, .contact {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.features h2, .about h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #f1f6fb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 0.75rem;
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact button:hover {
+    background: #005bb5;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding: 3rem 1rem 2rem 1rem;
+    }
+    .features, .about, .contact {
+        padding: 1.5rem 0.5rem;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyBrand</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Build modern, responsive websites easily!</p>
+        <a href="#contact" class="cta-btn">Get Started</a>
+    </section>
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Fast</h3>
+                <p>Lightning-fast loading times.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Responsive</h3>
+                <p>Looks great on all devices.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Modern</h3>
+                <p>Clean and modern design.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We help you create stunning websites with minimal effort and maximum impact.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+         <strong>📞 Phone:</strong>
+      <a href="tel:+918128397383">+91 81283 97383</a><br>
+       <strong>📧 Email:</strong>
+      <a href="mailto:kautilyaparmar7@gmail.com">kautilyaparmar7@gmail.com</a>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Kautilya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
